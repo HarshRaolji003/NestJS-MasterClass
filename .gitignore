@@ -2,7 +2,7 @@
 /dist
 /node_modules
 /build
-/documents
+/documentation
 # Logs
 logs
 *.log
