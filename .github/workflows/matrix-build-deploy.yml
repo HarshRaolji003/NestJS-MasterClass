@@ -2,7 +2,7 @@ name: Matrix Build & Test
 
 on:
   push:
-    branches: [main, master]
+    # branches: [main, master]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
