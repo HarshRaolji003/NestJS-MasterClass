@@ -5,7 +5,7 @@ import { Post } from 'src/posts/entities/post.entity';
 @Entity()
 export class User {
   @PrimaryGeneratedColumn()
-  id: number;
+  id: string;
 
   @Column({
     type: 'varchar',
