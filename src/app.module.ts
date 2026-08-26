@@ -8,6 +8,7 @@ import { PostsModule } from './posts/posts.module';
 import { TagsModule } from './tags/tags.module';
 import { MetaOptionsModule } from './meta-options/meta-options.module';
 import { UsersModule } from './users/users.module';
+import { PaginationProvider } from './common/pagination/providers/pagination.provider';
 
 const ENV = process.env.NODE_ENV;
 
@@ -38,6 +39,6 @@ const ENV = process.env.NODE_ENV;
     UsersModule,
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, PaginationProvider],
 })
 export class AppModule {}
